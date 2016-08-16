@@ -1,6 +1,10 @@
 {
   "name": "rollup-test",
   "version": "1.0.0",
+  "dependencies": {
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  },
   "license": "MIT",
   "private": true
 }
