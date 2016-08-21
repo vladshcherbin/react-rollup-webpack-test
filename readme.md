@@ -26,14 +26,17 @@ npm run build
 
 ## Current status
 
-Default skeleton bundle size:
+Bundle size (skeleton & with unused `Link` from `react-router` package):
 
-| Bundler | Version | Size |
-| --- | --- | --- |
-| rollup | 0.34.9 | 156 kb |
-| webpack | 2.1.0-beta.20 | 146 kb |
+| Bundler | Version | Contents | Size |
+| --- | --- | --- | --- |
+| rollup | 0.34.9 | react 15.3.0 | 156 kb |
+| rollup | 0.34.9 | react 15.3.0  + router 3.0.0-alpha.3 | 199 kb |
+| webpack | 2.1.0-beta.20 | react 15.3.0  | 146 kb |
+| webpack | 2.1.0-beta.20 | react 15.3.0  + router 3.0.0-alpha.3 | 188 kb |
 
 - Rollup build size is bigger by 10 kb.
 - Can't use react-router with rollup.
   - Uncomment the line in `app/index.js` file and run the build command.
+  - Current is to specify namedExports - [link](https://github.com/rollup/rollup/issues/855).
 - Tree shaking is under a question
