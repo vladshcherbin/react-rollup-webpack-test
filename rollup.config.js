@@ -16,7 +16,10 @@ export default {
       jsnext: true
     }),
     commonjs({
-      include: 'node_modules/**'
+      include: 'node_modules/**',
+      namedExports: {
+        'node_modules/react/react.js': ['PropTypes', 'createElement']
+      }
     }),
     replace({
       'process.env.NODE_ENV': JSON.stringify('production')
