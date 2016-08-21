@@ -44,3 +44,4 @@ Bundle size (skeleton & with unused `Link` from `react-router` package):
   - Uncomment the line in `app/index.js` file and run the build command.
   - Current is to specify namedExports - [link](https://github.com/rollup/rollup/issues/855).
 - Tree shaking is under a question
+- There are [uglify warnings](uglify-warnings) if `warnings: true` option is set in the config file.
