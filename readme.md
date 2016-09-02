@@ -37,7 +37,6 @@ Bundle size (skeleton & with unused `Link` from `react-router` package):
 | webpack | 2.1.0-beta.21 | react 15.3.1  | 147 kb |
 | webpack | 2.1.0-beta.21 | react 15.3.1  + router 3.0.0-alpha.3 | 189 kb |
 
-- Rollup build size is bigger by 10 kb.
 - React-router needs a config fix with rollup.
   - Current fix is to specify namedExports - [link](https://github.com/rollup/rollup/issues/855).
 - Tree shaking is under a question
