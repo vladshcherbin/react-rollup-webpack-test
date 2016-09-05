@@ -9,6 +9,9 @@ export default {
   dest: 'build/rollup.js',
   format: 'iife',
   plugins: [
+    replace({
+      'process.env.NODE_ENV': JSON.stringify('production')
+    }),
     babel({
       exclude: 'node_modules/**'
     }),
@@ -20,9 +23,6 @@ export default {
       namedExports: {
         'node_modules/react/react.js': ['PropTypes', 'createElement']
       }
-    }),
-    replace({
-      'process.env.NODE_ENV': JSON.stringify('production')
     }),
     uglify({
       compress: {
