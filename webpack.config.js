@@ -30,5 +30,13 @@ module.exports = {
       },
       sourceMap: false
     })
-  ]
+  ],
+  resolve: {
+    mainFields: [
+      'browser',
+      'module',
+      'jsnext:main',
+      'main'
+    ]
+  }
 }
