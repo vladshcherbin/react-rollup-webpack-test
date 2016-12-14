@@ -30,10 +30,10 @@ Bundle size (skeleton & with unused `Link` from `react-router` package):
 
 | Bundler | Version | Contents | Size |
 | --- | --- | --- | --- |
-| rollup | 0.36.3 | react 15.3.2 | 137 kb |
-| rollup | 0.36.3 | react 15.3.2 + router 3.0.0 | 177 kb |
-| webpack | 2.1.0-beta.25 | react 15.3.2  | 147 kb |
-| webpack | 2.1.0-beta.25 | react 15.3.2 + router 3.0.0 | 190 kb |
+| rollup | 0.37.0 | react 15.4.1 | 132 kb |
+| rollup | 0.37.0 | react 15.4.1 + router 3.0.0 | 172 kb |
+| webpack | 2.1.0-beta.28 | react 15.4.1  | 142 kb |
+| webpack | 2.1.0-beta.28 | react 15.4.1 + router 3.0.0 | 185 kb |
 
 - Rollup bundle file is 10kb / 13kb less.
 - React-router needs a config fix with rollup.
