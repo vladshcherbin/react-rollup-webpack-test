@@ -10,8 +10,8 @@ Bundle size (skeleton & with unused `Link` from `react-router` package):
 | --- | --- | --- | --- |
 | rollup | 0.41.4 | react 15.4.2 | 131 kb |
 | rollup | 0.41.4 | react 15.4.2 + router 3.0.1 | 172 kb |
-| webpack | 2.2.0-rc.7 | react 15.4.2  | 142 kb |
-| webpack | 2.2.0-rc.7 | react 15.4.2 + router 3.0.1 | 186 kb |
+| webpack | 2.2.0 | react 15.4.2  | 142 kb |
+| webpack | 2.2.0 | react 15.4.2 + router 3.0.1 | 186 kb |
 
 - Tree shaking doesn't remove unused router package.
 - Rollup bundle file is 11kb / 14kb less.
