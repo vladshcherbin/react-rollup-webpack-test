@@ -19,20 +19,15 @@ export default {
       jsnext: true
     }),
     commonjs({
-      include: 'node_modules/**',
-      namedExports: {
-        'node_modules/react/react.js': ['PropTypes', 'createElement']
-      }
+      include: 'node_modules/**'
     }),
     uglify({
       compress: {
-        screw_ie8: true,
         warnings: false
       },
       output: {
         comments: false
-      },
-      sourceMap: false
+      }
     })
   ]
 }
