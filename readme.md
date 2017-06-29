@@ -1,4 +1,4 @@
-# React Rollup & Webpack Test
+# React Rollup & Webpack Tree-Shaking Test
 
 A simple app test case for tree-shaking comparison.
 
@@ -8,13 +8,15 @@ Bundle size (bare app and with unused `Link` from `react-router-dom` package):
 
 | Bundler | Version | Contents | Size |
 | --- | --- | --- | --- |
-| rollup | 0.41.6 | react 15.5.4 | 129 kb |
-| rollup | 0.41.6 | react 15.5.4 + react-router 4.1.1 | 167 kb |
-| webpack | 2.6.0 | react 15.5.4  | 142 kb |
-| webpack | 2.6.0 | react 15.5.4 + react-router 4.1.1 | 183 kb |
+| rollup | 0.43.0 | react 15.6.1 | 131 kb |
+| rollup | 0.43.0 | react 15.6.1 + react-router 4.1.1 | 170 kb |
+| webpack | 3.0.0 | react 15.6.1  | 146 kb |
+| webpack | 3.0.0 | react 15.6.1 + react-router 4.1.1 | 187 kb |
+
+## Results
 
 - Neither Rollup nor Webpack can't remove unused `react-router-dom` package.
-- Rollup bundle file is 13kb / 16kb less.
+- Rollup bundle file is 15kb / 17kb less.
 
 ## Usage
 
