@@ -11,12 +11,13 @@ Bundle size (bare app and with unused `Link` from `react-router-dom` package):
 | rollup | 0.43.0 | react 15.6.1 | 131 kb |
 | rollup | 0.43.0 | react 15.6.1 + react-router 4.1.1 | 170 kb |
 | webpack | 3.0.0 | react 15.6.1  | 146 kb |
-| webpack | 3.0.0 | react 15.6.1 + react-router 4.1.1 | 187 kb |
+| webpack | 3.0.0 | react 15.6.1 + react-router 4.1.1 | 186 kb |
 
 ## Results
 
 - Neither Rollup nor Webpack can't remove unused `react-router-dom` package.
-- Rollup bundle file is 15kb / 17kb less.
+- Rollup bundle file is 15kb / 16kb less.
+- Webpack 3.0.0 Scope Hoisting feature reduced the file by 1kb. Yaaay
 
 ## Usage
 
